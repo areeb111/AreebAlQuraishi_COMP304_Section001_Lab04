@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AbhishekJamwal_COMP304Section001_LabAssignment4</string>
+    <string name="login">Login</string>
+    <string name="register">Create a new account</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="g4autosale">G4 Auto sale</string>
+</resources>
