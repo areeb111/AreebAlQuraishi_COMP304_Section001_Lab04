@@ -40,7 +40,6 @@ public class AddNewCarActivity extends AppCompatActivity {
         addnewcar = findViewById(R.id.addnewcar);
         carsViewModel = ViewModelProviders.of(this).get(CarsViewModel.class);
 
-
         addnewcar.setOnClickListener((v -> {
             car = new Cars(
                     Objects.requireNonNull(brandname.getText()).toString(),
