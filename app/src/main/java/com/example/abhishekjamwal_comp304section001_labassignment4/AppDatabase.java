@@ -7,6 +7,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.example.abhishekjamwal_comp304section001_labassignment4.DAO.CarSalesDAO;
+import com.example.abhishekjamwal_comp304section001_labassignment4.DAO.CarsDAO;
 import com.example.abhishekjamwal_comp304section001_labassignment4.DAO.CustomersDAO;
 import com.example.abhishekjamwal_comp304section001_labassignment4.Models.CarSales;
 import com.example.abhishekjamwal_comp304section001_labassignment4.Models.Cars;
@@ -25,6 +26,7 @@ public abstract class AppDatabase extends RoomDatabase {
 
     public abstract CarSalesDAO carSalesDao();
     public abstract CustomersDAO customersDAO();
+    public abstract CarsDAO carsDAO();
 
     //
     public static synchronized AppDatabase getInstance(Context context) {

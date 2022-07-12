@@ -23,7 +23,6 @@ public interface CarSalesDAO {
     @Delete
     public void deleteSale(CarSales sale);
 
-
     @Query("SELECT * FROM carsales ORDER BY saleId DESC")
     public LiveData<List<CarSales>> loadAllSales();
 

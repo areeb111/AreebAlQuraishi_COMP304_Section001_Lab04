@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.CustomerProfileActivity">
+
+
+    <LinearLayout
+        android:id="@+id/profileinfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/update">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/updating_profile"
+            android:textSize="22sp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="4dp"
+            android:lines="1"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:id="@+id/username"
+            android:textSize="20sp"
+            android:textColor="@color/purple_200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="4dp"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:textSize="20sp"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="@color/purple_200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="4dp"
+            android:hint="@string/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstname"
+                android:textSize="20sp"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/purple_200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="4dp"
+
+            android:hint="@string/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastname"
+                android:textSize="20sp"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/purple_200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="4dp"
+            android:hint="@string/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
+                android:textSize="20sp"
+                android:textColor="@color/purple_200"
+                android:layout_width="match_parent"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="4dp"
+            android:hint="@string/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/city"
+                android:textSize="20sp"
+                android:textColor="@color/purple_200"
+                android:layout_width="match_parent"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="4dp"
+            android:hint="@string/postalcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postalcode"
+                android:textSize="20sp"
+                android:textColor="@color/purple_200"
+                android:layout_width="match_parent"
+                android:lines="1"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/update"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/profileinfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/updateprofile" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

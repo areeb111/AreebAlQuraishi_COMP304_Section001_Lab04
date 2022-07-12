@@ -5,4 +5,20 @@
     <string name="password">Password</string>
     <string name="username">Username</string>
     <string name="g4autosale">G4 Auto sale</string>
+    <string name="buyanewcar">Buy a new car</string>
+    <string name="addnewcar">Add a new car</string>
+    <string name="mygarage">My garage</string>
+    <string name="updateprofile">Update profile</string>
+    <string name="lastname">Lastname</string>
+    <string name="firstname">Firstname</string>
+    <string name="postalcode">Postal code</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="updating_profile">Updating profile</string>
+    <string name="brandname">Brand name</string>
+    <string name="modelname">Model name</string>
+    <string name="year">Year</string>
+    <string name="price">Price</string>
+    <string name="color">Color</string>
+    <string name="transmission">Transmission</string>
 </resources>
