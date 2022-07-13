@@ -21,4 +21,14 @@
     <string name="price">Price</string>
     <string name="color">Color</string>
     <string name="transmission">Transmission</string>
+    <string name="emptyview">No cars available</string>
+    <string name="carcheckout">Car Checkout</string>
+    <string name="checkout">Checkout</string>
+    <string name="cardcvv">Card CVV</string>
+    <string name="cardexpiry">Card Expiry date</string>
+    <string name="cardname">Cardholder name</string>
+    <string name="cardnumber">Credit card number</string>
+    <string name="paymentinfo">Payment Information</string>
+    <string name="sale_id">Sale ID</string>
+    <string name="sale_date">Sale Date</string>
 </resources>

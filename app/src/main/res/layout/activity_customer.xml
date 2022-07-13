@@ -91,6 +91,23 @@
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actions"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/empty"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emptyview"
+            android:textAlignment="center" />
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_marginHorizontal="20dp"
@@ -98,7 +115,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/actions"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        tools:listitem="@layout/car_list_item"
+        tools:itemCount="10"
         android:layout_height="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

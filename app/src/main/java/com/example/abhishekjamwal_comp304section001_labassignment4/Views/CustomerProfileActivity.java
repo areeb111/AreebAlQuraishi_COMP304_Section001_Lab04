@@ -74,7 +74,13 @@ public class CustomerProfileActivity extends AppCompatActivity {
             customer.setPostalCode(Objects.requireNonNull(postalcode.getText()).toString());
             customer.setCity(Objects.requireNonNull(city.getText()).toString());
             customer.setAddress(Objects.requireNonNull(address.getText()).toString());
-            customer.setPassword(Objects.requireNonNull(password.getText()).toString());
+
+            // If password is not changed, Then keep the same password.
+            if (!Objects.requireNonNull(password.getText()).toString().equals("")) {
+                customer.setPassword(Objects.requireNonNull(password.getText()).toString());
+            }
+
+            // Update customer record
             customersViewModel.updateCustomer(customer);
 
             finish();

@@ -41,16 +41,17 @@ public class AddNewCarActivity extends AppCompatActivity {
         carsViewModel = ViewModelProviders.of(this).get(CarsViewModel.class);
 
         addnewcar.setOnClickListener((v -> {
-            car = new Cars(
-                    Objects.requireNonNull(brandname.getText()).toString(),
-                    Objects.requireNonNull(modelname.getText()).toString(),
-                    Objects.requireNonNull(price.getText()).toString(),
-                    Objects.requireNonNull(color.getText()).toString(),
-                    Objects.requireNonNull(transmission.getText()).toString(),
-                    2022
-            );
-            carsViewModel.insert(car);
-        }));
-
+                car = new Cars(
+                        Objects.requireNonNull(brandname.getText()).toString(),
+                        Objects.requireNonNull(modelname.getText()).toString(),
+                        Objects.requireNonNull(price.getText()).toString(),
+                        Objects.requireNonNull(color.getText()).toString(),
+                        Objects.requireNonNull(transmission.getText()).toString(),
+                        Integer.parseInt(Objects.requireNonNull(year.getText()).toString())
+                    );
+                carsViewModel.insert(car);
+                finish();
+            })
+        );
     }
 }

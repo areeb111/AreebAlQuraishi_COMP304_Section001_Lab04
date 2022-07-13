@@ -13,14 +13,11 @@ import java.util.List;
 @Dao
 public interface CarsDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    public void insertCars(List<Cars> cars);
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
     public void insertCar(Cars car);
 
     @Query("SELECT * FROM cars ORDER BY carId DESC")
     public LiveData<List<Cars>> getAllCars();
 
     @Query("SELECT * FROM cars WHERE carId = :carId")
-    public LiveData<Cars> getCar(Integer carId);
+    public LiveData<List<Cars>> getCarById(Integer carId);
 }

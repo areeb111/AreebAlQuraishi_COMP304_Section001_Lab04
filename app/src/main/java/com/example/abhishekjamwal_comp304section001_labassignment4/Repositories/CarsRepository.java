@@ -29,21 +29,13 @@ public class CarsRepository
         //call interface method
         carsList = carsDAO.getAllCars();
     }
-
     public LiveData<List<Cars>> getAllCars() {return carsList;}
 
-    //public LiveData<List<Customers>> authenticateUser(String userName, String password) {return customersDAO.authenticateUser(userName, password);}
-
-    //public LiveData<List<Customers>> getCustomerById(Integer custId) {return customersDAO.getCustomerbyId(custId);}
-
+    public LiveData<List<Cars>> getCarByid(Integer carId) {return carsDAO.getCarById(carId);}
 
     public void insert(Cars car) {
         insertAsync(car);
     }
-
-    //public void updateCustomer(Customers customer) {
-        //updateAsync(customer);
-    //}
 
     public LiveData<Integer> getInsertResult() {return insertResult; }
 
@@ -57,20 +49,4 @@ public class CarsRepository
             }
         }).start();
     }
-
-    /*
-    private void updateAsync(final Customers customer) {
-        new Thread((Runnable) () -> {
-            try {
-                customersDAO.updateCustomer(customer);
-                Log.i("UPDATING", "CUSTOMER UPDATED SUCCESSFULLY");
-            } catch (Exception e) {
-                Log.e("ERROR_UPDATING", e.toString());
-            }
-        }).start();
-    }
-
-     */
-
-
 }

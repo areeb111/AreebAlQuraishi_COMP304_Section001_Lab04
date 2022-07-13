@@ -30,11 +30,11 @@ public class CarsViewModel extends AndroidViewModel {
         return carsRepository.getInsertResult();
     }
 
-    public LiveData<List<Cars>> getAllCustomers() { return carsRepository.getAllCars(); }
+    public LiveData<List<Cars>> getAllCars() { return carsRepository.getAllCars(); }
 
     //public LiveData<List<Customers>> authenticateUser(String userName, String password) {return customersRepository.authenticateUser(userName, password);}
 
-    //public LiveData<List<Customers>> getCustomerById(Integer custId) {return customersRepository.getCustomerById(custId);}
+    public LiveData<List<Cars>> getCarById(Integer carId) {return carsRepository.getCarByid(carId);}
 
 
 
